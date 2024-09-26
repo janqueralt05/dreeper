@@ -1,0 +1,70 @@
+/* text style */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    background-color: #eee;
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+}
+
+.logo {
+    width: 85px;
+    height: 85px;
+    pointer-events: none;
+}
+
+.title {
+    color: #1c1c1c;
+    font-weight: 900;
+    font-family: "Archivo Black";
+    font-size: 5vw; /* Cambia a unidades relativas para mayor flexibilidad */
+    margin: 10px 30px; /* Añade margen superior e inferior */
+    display: block; /* Asegúrate de que el título ocupe toda la línea */
+}
+
+/* Estilo del botón */
+.button {
+    font-family: "Archivo Black";
+    margin-left: 150px; /* Cambia a unidades relativas */
+    font-size: 2vw; /* Cambia a unidades relativas */
+    text-decoration: underline;
+}
+
+.button:hover {
+    color: green;
+}
+
+.button-2{
+    margin-left: 5px;
+    font-family: "Archivo Black";
+    font-size: 10px; /* Cambia a unidades relativas */
+    text-decoration: underline;
+} .button-2:hover{
+    color: green;
+}
+
+.parrafo{
+    font-family: "Archivo Black";
+    margin-left: 5vw; /* Cambia a unidades relativas */
+    font-size: 10px; /* Cambia a unidades relativas */
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .logo {
+        width: 50px; /* Ajusta el tamaño de la imagen en dispositivos móviles */
+        height: 50px;
+    }
+
+    .title {
+        font-size: 7vw; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+        margin: 10px 10px; /* Reduce los márgenes */
+        line-height: 1.2; /* Aumenta el interlineado para mejor legibilidad */
+    }
+
+    .button {
+        font-size: 4vw; /* Ajusta el tamaño del botón en pantallas pequeñas */
+        margin-left: 0; /* Centra el botón en móviles */
+        margin-top: 10px; /* Añade margen superior al botón */
+    }
+}
